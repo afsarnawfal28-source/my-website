@@ -30,13 +30,13 @@ main {
 }
 
 section {
-    background-color: #1a1a20; /* Warna yang sedikit lebih terang dari background utama */
+    background-color: #1a1a20;
     margin-bottom: 2rem;
     padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid #333;
-    /* Efek neon glow pada border dan bayangan */
-    box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+    /* Tambahkan kode ini */
+    animation: glowing-border 3s infinite alternate;
 }
 
 h1, h2 {
@@ -79,4 +79,43 @@ footer {
     padding: 1rem 0;
     background-color: #121217;
     color: #666;
+}
+
+/* --- ANIMASI CYBERPUNK --- */
+/* Animasi Kedip Cahaya Neon pada Teks */
+@keyframes neon-flicker {
+    0%, 19.999%, 22%, 24%, 54%, 56%, 100% {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 15px #00ffff,
+            0 0 20px #00ffff,
+            0 0 35px #00ffff,
+            0 0 50px #00ffff;
+    }
+    20%, 21%, 23%, 25.1%, 55% {
+        text-shadow: none;
+    }
+}
+
+/* Animasi Glow Bergerak pada Kotak Konten */
+@keyframes glowing-border {
+    0% {
+        box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+    }
+    50% {
+        box-shadow: 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    }
+    100% {
+        box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+    }
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
