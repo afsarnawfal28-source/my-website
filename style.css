@@ -1,16 +1,12 @@
 body {
-    /* Background utama dengan gradasi sangat gelap */
-    background: linear-gradient(180deg, #0a0a0c 0%, #15151a 100%);
-    
-    /* Gambar pola grid digital yang transparan (dibuat dari kode base64) */
-    /* Ini memberikan kesan futuristik tanpa mengganggu. */
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%235b008d' fill-opacity='0.1'%3E%3Cpath d='M0 0h20v20H0V0zm2 2v16h16V2H2z'/%3E%3C/g%3E%3C/svg%3E");
-    
-    font-family: 'Poppins', sans-serif;
-    color: #e0e0e0; /* Warna teks abu-abu terang */
+    background-image: url('images/Background\ 2\ jpg.jpg');
+    background-size: cover; /* Menyesuaikan gambar agar menutupi seluruh layar */
+    background-position: center; /* Memastikan gambar berada di tengah */
+    background-repeat: no-repeat; /* Mencegah gambar berulang */
+    background-attachment: fixed; /* Membuat gambar tetap di tempatnya saat di-scroll */
+    font-family: Arial, sans-serif;
+    color: #444; /* Ganti warna teks agar sesuai dengan gambar latar */
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -132,4 +128,15 @@ footer {
 
 #link-kontak:hover {
     background-color: #0056b3;
+}
+
+.profile-photo {
+    width: 150px;       /* Mengatur lebar foto */
+    height: 150px;      /* Mengatur tinggi foto */
+    border-radius: 50%; /* Membuat foto menjadi lingkaran */
+    object-fit: cover; /* Memastikan foto tetap proporsional */
+    display: block;     /* Mengatur foto sebagai elemen blok */
+    margin: 20px auto;  /* Memberikan jarak dan menempatkan foto di tengah */
+    border: 3px solid #fff; /* Garis tepi putih */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
 }
