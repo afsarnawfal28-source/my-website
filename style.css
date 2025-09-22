@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat; /* Mencegah gambar berulang */
     background-attachment: fixed; /* Membuat gambar tetap di tempatnya saat di-scroll */
     font-family: Arial, sans-serif;
-    color: #444; /* Ganti warna teks agar sesuai dengan gambar latar */
+    color: #f8f0f0; /* Ganti warna teks agar sesuai dengan gambar latar */
     line-height: 1.6;
 }
 
